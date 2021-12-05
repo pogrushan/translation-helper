@@ -1,0 +1,29 @@
+{
+  "name": "translation-helper",
+  "private": true,
+  "description": "A GitHub Action keep your issue or PR in line with international standards.",
+  "main": "src/main.js",
+  "scripts": {
+    "package": "ncc build",
+    "format": "prettier --write src/*.js",
+    "format-check": "prettier --check src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RushanNotOfficial/translation-helper",
+    "branch": "main"
+  },
+  "author": "RushanNotOfficial",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@octokit/rest": "^18.0.14",
+    "@xrkffgg/google-translate": "^1.0.0"
+  },
+  "devDependencies": {
+    "@umijs/fabric": "^2.5.6",
+    "@vercel/ncc": "^0.27.0",
+    "prettier": "^2.2.1"
+  }
+}

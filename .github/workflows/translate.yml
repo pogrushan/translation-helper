@@ -1,0 +1,13 @@
+name: Translation Helper
+
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: RushanNotOfficial/translation-helper@main
